@@ -30859,11 +30859,11 @@ var StarRating = function StarRating() {
                 "relevance:"
             )
         ),
-        _react2.default.createElement("i", { "class": "fas fa-star" }),
-        _react2.default.createElement("i", { "class": "fas fa-star" }),
-        _react2.default.createElement("i", { "class": "fas fa-star" }),
-        _react2.default.createElement("i", { "class": "fas fa-star" }),
-        _react2.default.createElement("i", { "class": "fas fa-star" }),
+        _react2.default.createElement("i", { className: "fas fa-star" }),
+        _react2.default.createElement("i", { className: "fas fa-star" }),
+        _react2.default.createElement("i", { className: "fas fa-star" }),
+        _react2.default.createElement("i", { className: "fas fa-star" }),
+        _react2.default.createElement("i", { className: "fas fa-star" }),
         _react2.default.createElement(
             "p",
             null,
@@ -30895,11 +30895,11 @@ var StarRating = function StarRating() {
             )
         ),
         _react2.default.createElement("hr", null),
-        _react2.default.createElement("i", { "class": "fas fa-star" }),
-        _react2.default.createElement("i", { "class": "fas fa-star" }),
-        _react2.default.createElement("i", { "class": "fas fa-star" }),
-        _react2.default.createElement("i", { "class": "far fa-star" }),
-        _react2.default.createElement("i", { "class": "far fa-star" }),
+        _react2.default.createElement("i", { className: "fas fa-star" }),
+        _react2.default.createElement("i", { className: "fas fa-star" }),
+        _react2.default.createElement("i", { className: "fas fa-star" }),
+        _react2.default.createElement("i", { className: "far fa-star" }),
+        _react2.default.createElement("i", { className: "far fa-star" }),
         _react2.default.createElement(
             "p",
             null,
@@ -30956,7 +30956,7 @@ var StarRating = function StarRating() {
         _react2.default.createElement("hr", null),
         _react2.default.createElement(
             "button",
-            { "class": "button" },
+            { className: "button" },
             _react2.default.createElement(
                 "b",
                 null,
@@ -30965,7 +30965,7 @@ var StarRating = function StarRating() {
         ),
         _react2.default.createElement(
             "button",
-            { "class": "button" },
+            { className: "button" },
             _react2.default.createElement(
                 "b",
                 null,
