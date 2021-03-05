@@ -1,3 +1,5 @@
-import NameOfTheService from './components/NameOfTheService.jsx';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Ratings from './components/Ratings.jsx';
 
-window.NameOfTheService = NameOfTheService;
+ReactDOM.render(<Ratings/>, document.getElementById('ratings'))

@@ -1,0 +1,42 @@
+  body {
+      margin: 50px;
+      font-family: 'Noto Sans JP';
+  }
+
+  h1 {
+    text-transform: uppercase;
+    margin-left: 70px;
+    color: grey;
+  }
+
+  .stars-in-numbers {
+    font-size:100px;
+    font-weight: bold;
+    margin: 0px;
+    display: inline;
+  }
+
+  .star-rating {
+    display: inline-block;
+    position: absolute;
+    top: 150px;
+    margin-left: 15px
+  }
+
+  .scoreBar {
+    width: 300px;
+    background-color: #ddd;
+  }
+  
+  .skills {
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+  }
+  
+  .stars5 {width: 80%; background-color: green;}
+  .stars4 {width: 40%; background-color: green;}
+  .stars3 {width: 100%; background-color: green;}
+  .stars2 {width: 60%; background-color: green;}
+  .stars1 {width: 30%; background-color: green;}
