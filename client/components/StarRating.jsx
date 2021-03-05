@@ -6,7 +6,7 @@ import StarRatings from 'react-star-ratings';
 const StarRating = () => {
 
     return (
-        <div>
+        <div className="left-container">
             <p className='stars-in-numbers'>3.5</p>
             <div className="star-rating">
                 <StarRatings
@@ -53,7 +53,19 @@ const StarRating = () => {
                         <div className="skills stars1"></div>
                     </div>
                 </div>
-                
+
+            </div>
+            <br/><br/>
+            <div>
+                <div className="slidecontainer">
+                    <p className='sliderP'>Size</p>
+                    <input type="range" min="1" max="100" className="slider" id="myRange"></input>
+                </div>
+                <br/>
+                <div className="slidecontainer">
+                    <p className='sliderP'>Comfort</p>
+                    <input type="range" min="1" max="100" className="slider" id="myRange"></input>
+                </div>
             </div>
         </div>
     )

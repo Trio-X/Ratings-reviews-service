@@ -29153,6 +29153,10 @@ var _StarRating = __webpack_require__(20);
 
 var _StarRating2 = _interopRequireDefault(_StarRating);
 
+var _Reviews = __webpack_require__(29);
+
+var _Reviews2 = _interopRequireDefault(_Reviews);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -29189,7 +29193,8 @@ var Ratings = function (_React$Component) {
           null,
           'Ratings & Reviews'
         ),
-        _react2.default.createElement(_StarRating2.default, null)
+        _react2.default.createElement(_StarRating2.default, null),
+        _react2.default.createElement(_Reviews2.default, null)
       );
     }
   }]);
@@ -29265,102 +29270,129 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var StarRating = function StarRating() {
 
     return _react2.default.createElement(
-        'div',
-        null,
+        "div",
+        { className: "left-container" },
         _react2.default.createElement(
-            'p',
-            { className: 'stars-in-numbers' },
-            '3.5'
+            "p",
+            { className: "stars-in-numbers" },
+            "3.5"
         ),
         _react2.default.createElement(
-            'div',
-            { className: 'star-rating' },
+            "div",
+            { className: "star-rating" },
             _react2.default.createElement(_reactStarRatings2.default, {
                 rating: 3.5,
-                name: 'rating',
-                starDimension: '30px',
-                starSpacing: '1px',
-                starRatedColor: 'orange',
+                name: "rating",
+                starDimension: "30px",
+                starSpacing: "1px",
+                starRatedColor: "orange",
                 numberOfStars: 5
             })
         ),
         _react2.default.createElement(
-            'p',
+            "p",
             null,
-            '100% of reviews recommend this product '
+            "100% of reviews recommend this product "
         ),
         _react2.default.createElement(
-            'div',
+            "div",
             null,
             _react2.default.createElement(
-                'div',
-                { className: 'scoreBar-container' },
+                "div",
+                { className: "scoreBar-container" },
                 _react2.default.createElement(
-                    'p',
-                    { className: 'index' },
-                    '5 stars'
+                    "p",
+                    { className: "index" },
+                    "5 stars"
                 ),
                 _react2.default.createElement(
-                    'div',
-                    { className: 'scoreBar' },
-                    _react2.default.createElement('div', { className: 'skills stars5' })
+                    "div",
+                    { className: "scoreBar" },
+                    _react2.default.createElement("div", { className: "skills stars5" })
                 )
             ),
             _react2.default.createElement(
-                'div',
-                { className: 'scoreBar-container' },
+                "div",
+                { className: "scoreBar-container" },
                 _react2.default.createElement(
-                    'p',
-                    { className: 'index' },
-                    '4 stars'
+                    "p",
+                    { className: "index" },
+                    "4 stars"
                 ),
                 _react2.default.createElement(
-                    'div',
-                    { className: 'scoreBar' },
-                    _react2.default.createElement('div', { className: 'skills stars4' })
+                    "div",
+                    { className: "scoreBar" },
+                    _react2.default.createElement("div", { className: "skills stars4" })
                 )
             ),
             _react2.default.createElement(
-                'div',
-                { className: 'scoreBar-container' },
+                "div",
+                { className: "scoreBar-container" },
                 _react2.default.createElement(
-                    'p',
-                    { className: 'index' },
-                    '3 stars'
+                    "p",
+                    { className: "index" },
+                    "3 stars"
                 ),
                 _react2.default.createElement(
-                    'div',
-                    { className: 'scoreBar' },
-                    _react2.default.createElement('div', { className: 'skills stars3' })
+                    "div",
+                    { className: "scoreBar" },
+                    _react2.default.createElement("div", { className: "skills stars3" })
                 )
             ),
             _react2.default.createElement(
-                'div',
-                { className: 'scoreBar-container' },
+                "div",
+                { className: "scoreBar-container" },
                 _react2.default.createElement(
-                    'p',
-                    { className: 'index' },
-                    '2 stars'
+                    "p",
+                    { className: "index" },
+                    "2 stars"
                 ),
                 _react2.default.createElement(
-                    'div',
-                    { className: 'scoreBar' },
-                    _react2.default.createElement('div', { className: 'skills stars2' })
+                    "div",
+                    { className: "scoreBar" },
+                    _react2.default.createElement("div", { className: "skills stars2" })
                 )
             ),
             _react2.default.createElement(
-                'div',
-                { className: 'scoreBar-container' },
+                "div",
+                { className: "scoreBar-container" },
                 _react2.default.createElement(
-                    'p',
-                    { className: 'index' },
-                    '1 stars'
+                    "p",
+                    { className: "index" },
+                    "1 stars"
                 ),
                 _react2.default.createElement(
-                    'div',
-                    { className: 'scoreBar' },
-                    _react2.default.createElement('div', { className: 'skills stars1' })
+                    "div",
+                    { className: "scoreBar" },
+                    _react2.default.createElement("div", { className: "skills stars1" })
                 )
+            )
+        ),
+        _react2.default.createElement("br", null),
+        _react2.default.createElement("br", null),
+        _react2.default.createElement(
+            "div",
+            null,
+            _react2.default.createElement(
+                "div",
+                { className: "slidecontainer" },
+                _react2.default.createElement(
+                    "p",
+                    { className: "sliderP" },
+                    "Size"
+                ),
+                _react2.default.createElement("input", { type: "range", min: "1", max: "100", className: "slider", id: "myRange" })
+            ),
+            _react2.default.createElement("br", null),
+            _react2.default.createElement(
+                "div",
+                { className: "slidecontainer" },
+                _react2.default.createElement(
+                    "p",
+                    { className: "sliderP" },
+                    "Comfort"
+                ),
+                _react2.default.createElement("input", { type: "range", min: "1", max: "100", className: "slider", id: "myRange" })
             )
         )
     );
@@ -30794,6 +30826,156 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 	}
 }());
 
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var StarRating = function StarRating() {
+
+    return _react2.default.createElement(
+        "div",
+        { className: "right-container" },
+        _react2.default.createElement(
+            "p",
+            null,
+            "248 Reviews, sorted by ",
+            _react2.default.createElement(
+                "u",
+                null,
+                "relevance:"
+            )
+        ),
+        _react2.default.createElement("i", { "class": "fas fa-star" }),
+        _react2.default.createElement("i", { "class": "fas fa-star" }),
+        _react2.default.createElement("i", { "class": "fas fa-star" }),
+        _react2.default.createElement("i", { "class": "fas fa-star" }),
+        _react2.default.createElement("i", { "class": "fas fa-star" }),
+        _react2.default.createElement(
+            "p",
+            null,
+            _react2.default.createElement(
+                "b",
+                null,
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            )
+        ),
+        _react2.default.createElement(
+            "p",
+            null,
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+        ),
+        _react2.default.createElement(
+            "p",
+            null,
+            "Helpful? ",
+            _react2.default.createElement(
+                "u",
+                null,
+                "Yes"
+            ),
+            " (10) | ",
+            _react2.default.createElement(
+                "u",
+                null,
+                "Report"
+            )
+        ),
+        _react2.default.createElement("hr", null),
+        _react2.default.createElement("i", { "class": "fas fa-star" }),
+        _react2.default.createElement("i", { "class": "fas fa-star" }),
+        _react2.default.createElement("i", { "class": "fas fa-star" }),
+        _react2.default.createElement("i", { "class": "far fa-star" }),
+        _react2.default.createElement("i", { "class": "far fa-star" }),
+        _react2.default.createElement(
+            "p",
+            null,
+            _react2.default.createElement(
+                "b",
+                null,
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            )
+        ),
+        _react2.default.createElement(
+            "p",
+            null,
+            "sunt in culpa qui officia deserunt mollit anim id est laborum, sed quia non numquam eius modi tempora."
+        ),
+        _react2.default.createElement(
+            "p",
+            null,
+            "\u2714 I recommend this product"
+        ),
+        _react2.default.createElement(
+            "div",
+            { className: "container-p" },
+            _react2.default.createElement(
+                "p",
+                null,
+                _react2.default.createElement(
+                    "b",
+                    null,
+                    "Response:"
+                )
+            ),
+            _react2.default.createElement(
+                "p",
+                null,
+                "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur"
+            )
+        ),
+        _react2.default.createElement(
+            "p",
+            null,
+            "Helpful? ",
+            _react2.default.createElement(
+                "u",
+                null,
+                "Yes"
+            ),
+            " (9) | ",
+            _react2.default.createElement(
+                "u",
+                null,
+                "Report"
+            )
+        ),
+        _react2.default.createElement("hr", null),
+        _react2.default.createElement(
+            "button",
+            { "class": "button" },
+            _react2.default.createElement(
+                "b",
+                null,
+                "MORE REVIEWS"
+            )
+        ),
+        _react2.default.createElement(
+            "button",
+            { "class": "button" },
+            _react2.default.createElement(
+                "b",
+                null,
+                "ADD A REVIEW +"
+            )
+        )
+    );
+};
+
+exports.default = StarRating;
 
 /***/ })
 /******/ ]);
